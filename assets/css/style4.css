@@ -8,58 +8,73 @@ Flip between this CSS file and the HTML to see how things line up.
 Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    padding: 0;
-    margin: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
-    line-height: 150%;
-    color: #333;
-    background: #efeee7;
+    background-color: gainsboro;
   }
-  
-  header {
-    background: #333;
+
+  header, footer {
+    padding: 12px;
+    background-color: whitesmoke;
+    color: black;
   }
   
   h1 {
-    padding: 20px 0;
-    margin: 0;
+    padding: 2px;
     margin-bottom: 20px;
     font-size: 28px;
-    color: #eee;
-    text-align: center;
+    background-color: aqua;
+    color: white;
+    text-align: left;
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+    color:black;
+    float: right;
+
+}
+
+li {
+  float: left;
+}
+
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
   
   h2 {
     font-size: 24px;
   }
   
-  a {
-    color: #d21034;
-  }
-  
-  .container {
-    width: 1024px;
-    margin: 0 auto;
-  }
-  
-  #main-bio,
-  #contact-info,
-  #bio-image {
-    float: left;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #contact-info {
-    width: 30%;
-  }
-  
-  #bio-image {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-  }
+img {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+p {
+  float: right;
+}
