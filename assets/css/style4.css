@@ -1,5 +1,5 @@
 div {
-  padding: 15px;
+  padding: 1.5px;
 }
 
 body {
@@ -7,51 +7,45 @@ body {
     font-size: 18px;
     background-color: whitesmoke;
     border-color: #dddddd;
-    line-height: 1.4em;
     margin: 0;
+  }
+
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 25px;
+    word-break: break-all;
   }
 
   aside {
     float: right;
-    width: 33%;
+    width: 50%;
     padding: 218px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     color: rgb(185, 108, 108);
     background: white;
   }
 
   .content {
-    width: 50%;
+    width: 60%;
     background: white;
     margin: auto;
-    padding: 25px;
-  }
-
-  .header {
-    border-bottom: 0px;
-    background-color: #4aaaa5;
-    border-color: #666666;
-    padding:10px;
-    background-color: #ffffff;
-    color: black;
+    padding: 50px;
   }
   
-  .h1 {
-    padding: 2px;
-    margin-bottom: 20px;
-    font-size: 28px;
-    background-color: aqua;
-    color: white;
-    text-align: left;
-  }
+
 
   .navbar {
     overflow: hidden;
     background-color: white;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
+    visibility: hidden;
   }
 
   .navbar a {
@@ -61,6 +55,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     font-size: 17px;
+    visibility: visible;
   }
 
   .navbar a:hover {
@@ -79,19 +74,18 @@ h2 {
 }
 
 img { 
-  border-top: 2px solid gray;
   float: left;
 }
 
 .footer {
-       position: fixed;
-       left: 0;
-       bottom: 0;
-       width: 100%;
-       text-align: center;
-       background-color: #666666;
-       font-size: 50%;
-       border-top: 5px solid #4aaaa5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #666666;
+  font-size: 50%;
+  border-top: 5px solid #4aaaa5;
 
 }
 
@@ -101,15 +95,15 @@ img {
 }
 
 input[type=text], textarea {
-  width: 100%;
-  padding: 12px;
+  width: 80%;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
 }
 
 label {
-  padding: 12px 12px 12px 0;
+  padding: 15px 5px 5px 0;
   display: inline-block;
 }
 
@@ -118,9 +112,9 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
-  float: right;
+  float: left;
 }
 
 input[type=submit]:hover {
@@ -128,21 +122,22 @@ input[type=submit]:hover {
 }
 
 .container {
-  border-radius: 5px;
+  border-radius: 1px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 10px;
+  margin-top: 50px;
 }
 
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .col-75 {
   float: left;
   width: 75%;
-  margin-top: 6px;
+  margin-top: 20px;
 }
 
 .row:after {
@@ -151,10 +146,42 @@ input[type=submit]:hover {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
   .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
   }
 }
 
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
