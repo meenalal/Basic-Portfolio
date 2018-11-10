@@ -106,7 +106,7 @@ div.hangman {
   height: 150px; 
   width: 200px; 
   border: 1px solid black; 
-  background-image: url(../images/mountains.jpg);
+  background-image: url(../images/hangman.png);
   background-size: auto 100%;
   padding-top: 90px;
   margin-bottom: 40px;
@@ -120,7 +120,7 @@ div.rpggame {
   height: 150px;
   width: 200px;
   border: 1px solid black;
-  background-image: url(../images/mountains1.jpg);
+  background-image: url(../images/starwars.jpg);
   background-size: auto 100%;
   padding-top: 90px;
   margin-bottom: 40px;
@@ -131,9 +131,9 @@ div.rpggame {
 div.trivia {
   text-align: center;
   height: 150px;
-  width: 200px;
+  width: 280px;
   border: 1px solid black;
-  background-image: url(../images/mountains2.jpg);
+  background-image: url(../images/trivia.jpg);
   background-size: auto 100%;
   padding-top: 90px;
   margin-bottom:40px;
@@ -159,7 +159,7 @@ div.rock {
   height: 150px;
   width: 200px;
   border: 1px solid black;
-  background-image: url(../images/bear.jpg);
+  background-image: url(../images/rps.jpg);
   background-size: auto 100%;
   padding-top: 90px;
   margin-bottom:40px;
